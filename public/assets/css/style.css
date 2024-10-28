@@ -1,5 +1,5 @@
 :root {
-    --background-ligth: #f0f2fa;
+    --background-ligth: #C1BCEC;
     --background-white: #f6f5ff;
     --text-dark: #0a0040;
     --color-primary: #6143ff;
@@ -17,7 +17,7 @@
 body {
     height: 100vh;
     width: 100vh;
-    background-color: var(--background-ligth);
+    background-color: var(--background-white);
 }
 
 .conteiner {
@@ -27,14 +27,18 @@ body {
 }
 
 .sidebar {
-    width: 100px;
+    width: 100px !important;
     background-color: var(--color-primary);
+}
+
+.sidebar p {
+    width: 100vw !important;
 }
 
 nav {
     height: 100px;
-    background-color: teal;
-    width: calc(100vh - 100px);
+    background-color: var(--background-ligth);
+    width: calc(100vw - 100px);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -50,4 +54,33 @@ nav {
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section.graph {
+    width: 33%;
+    height: 100%;
+}
+
+.graph_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    display: inline-block;
+    background-color: red;
+}
+
+hr.linhaHeader {
+    width: 50px;
+    display: inline-block;
 }

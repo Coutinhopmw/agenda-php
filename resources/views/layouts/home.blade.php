@@ -15,12 +15,27 @@
 <body>
     <div class="conteiner">
         <div class="sidebar">
-            logo
+            <p>logo</p>
         </div>
         <div class="content">
-            <a href="#" class="btn btn-primary">
-                Criar tarefa
-            </a>
+            <nav>
+                <a href="#" class="btn btn-primary">
+                    Criar tarefa
+                </a>
+            </nav>
+            <main>
+                <section class="graph">
+                    <div class="graph_header">
+                        <h2>Progresso do dia</h2>
+                        <hr class="linhaHeader">
+                        Data
+                    </div>
+                </section>
+                <section class="list">
+                    lista
+                </section>
+
+            </main>
         </div>
     </div>
 </body>
