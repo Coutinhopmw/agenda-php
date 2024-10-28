@@ -29,10 +29,15 @@ body {
 .sidebar {
     width: 100px !important;
     background-color: var(--color-primary);
+
 }
 
 .sidebar p {
     width: 100vw !important;
+}
+
+.sidebar img {
+    width: 5vw;
 }
 
 nav {
@@ -68,19 +73,97 @@ main {
 section.graph {
     width: 33%;
     height: 100%;
+    background-color: chartreuse;
 }
 
 .graph_header {
     display: flex;
     justify-content: space-between;
+    width: max-content;
 }
 
 h2 {
     display: inline-block;
-    background-color: red;
 }
 
 hr.linhaHeader {
     width: 50px;
+    height: 1px;
     display: inline-block;
+}
+
+.graph_header-subtittle {
+    margin-top: 10px;
+}
+
+.graph-placeholder {
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    margin-left: 35px;
+}
+
+.graph_header-tasks_left {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.list {
+    padding: 5px 15px;
+    flex:1;
+}
+
+.list_header-select{
+    display: flex;
+    padding: 10px;
+}
+
+.task_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5px;
+    border-bottom: 1px solid var(--background-ligth);   
+    margin-bottom: 10px;
+}
+
+.task:hover {
+    background-color: var(--background-ligth);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.priority, .actions {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sphere {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.task_title {
+    padding-left: 10px;
+    font-weight: bold;
 }
