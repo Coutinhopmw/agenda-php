@@ -54,12 +54,18 @@ nav {
     padding: 20px 30px;
     border-radius: 10px;
     text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
 }
+
 
 a.btn {
     text-decoration: none;
@@ -73,16 +79,18 @@ main {
 section.graph {
     width: 33%;
     height: 100%;
-    background-color: chartreuse;
 }
 
 .graph_header {
     display: flex;
     justify-content: space-between;
     width: max-content;
+    align-items: center;
 }
 
 h2 {
+    flex: 2;
+    font-size: 18px;
     display: inline-block;
 }
 
@@ -97,11 +105,12 @@ hr.linhaHeader {
 }
 
 .graph-placeholder {
-    background-color: #ccc;
     width: 300px;
     height: 300px;
-    padding-top: 20px;
+    margin-top: 50px;
     margin-left: 35px;
+    background: url('/assets/images/graph.png');
+    background-size: contain;
 }
 
 .graph_header-tasks_left {
@@ -109,14 +118,36 @@ hr.linhaHeader {
     margin-top: 10px;
 }
 
+.linha_header-line {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 2px;
+}
+
+.graph_header-date {
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+
 .list {
-    padding: 5px 15px;
+    padding: 20px 20px 0 20px;
     flex:1;
 }
 
 .list_header-select{
     display: flex;
     padding: 10px;
+}
+
+.list_header-select {
+    background-color: transparent;
+    border: 0;
+    font-weight: bold;
+    color: var(--text-dark);
 }
 
 .task_list {
@@ -134,10 +165,14 @@ hr.linhaHeader {
     padding: 30px 5px;
     border-bottom: 1px solid var(--background-ligth);   
     margin-bottom: 10px;
+    transition: all .3s ease-in-out;
 }
 
 .task:hover {
+    transform: scale(1.01);
     background-color: var(--background-ligth);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .title {
@@ -157,6 +192,16 @@ hr.linhaHeader {
     justify-content: flex-end;
     align-items: center;
 }
+
+.actions a {
+    margin-right: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.actions>a:hover {
+    transform: scale(2);
+}
+
 .sphere {
     width: 22px;
     height: 22px;
@@ -166,4 +211,15 @@ hr.linhaHeader {
 .task_title {
     padding-left: 10px;
     font-weight: bold;
+}
+
+.tasks_left_footer{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.checkbox {
+    width: 20px;
 }
