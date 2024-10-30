@@ -1,7 +1,7 @@
 <div class="task">
     <div class="title">
         <input type="text" class="checkbox"
-            @if ( $data && $data['done'])
+            @if ($data && $data['Done'])
                 checked
             @endif
         />
@@ -13,10 +13,10 @@
         </div>
     </div>
     <div class="actions">
-        <a href="#">
+        <a href="{{route('task.edit',['id' => $data['id']])}}">
             <img src="/assets/images/icon-edit.png" alt="">
         </a>
-        <a href="#">
+        <a href="{{route('task.delete',['id' => $data['id']])}}">
             <img src="/assets/images/icon-delete.png" alt="">
         </a>
     </div>

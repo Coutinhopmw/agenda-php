@@ -1,12 +1,15 @@
 <x-layout page="Agenda:Login">
 
     <x-slot:btn>
-        <a href="#" class="btn btn-primary">
+        <a href="{{route('register')}}" class="btn btn-primary">
             Criar conta
         </a>
     </x-slot>
 
 
-    Tela de login
+    <a href=" {{route('home')}} " class="btn btn-primary">
+        Ir para a home
+    </a>
+
 </x-layout>
     
