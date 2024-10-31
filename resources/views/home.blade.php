@@ -21,7 +21,7 @@
             Tarefas: <b>3/8</b>
         </div>
         <div class="graph-placeholder">
-        
+
         </div>
         <div class="tasks_left_footer">
             <img src="/assets/images/icon-info.png" alt="" srcset=""> Restam 3 tarefas para serem realizadas
@@ -34,9 +34,8 @@
             </select>
             <div class="task_list">
                 @foreach ($tasks as $task)
-                    <x-task :data=$task/>   
+                    <x-task :data=$task/>
                 @endforeach
-
             </div>
         </div>
     </section>

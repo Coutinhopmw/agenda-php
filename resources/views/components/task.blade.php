@@ -9,7 +9,7 @@
     </div>
     <div class="priority">
         <div class="sphere">
-            <h6>{{$data['category'] ?? '' }}</h6>
+            <h6>{{$data['category']->title ?? '' }}</h6>
         </div>
     </div>
     <div class="actions">
