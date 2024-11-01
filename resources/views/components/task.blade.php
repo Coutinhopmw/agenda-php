@@ -1,7 +1,7 @@
 <div class="task">
     <div class="title">
-        <input type="text" class="checkbox"
-            @if ($data && $data['Done'])
+        <input type="checkbox" class="checkbox"
+            @if ($data && $data['is_done'])
                 checked
             @endif
         />
